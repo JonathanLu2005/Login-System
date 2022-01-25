@@ -1,0 +1,107 @@
+<html><head><title> Welcome page </title>
+</head><body>
+<style>
+* {
+	padding: 0;
+	margin: 0;
+	background-color: #ffd7b0;
+}
+
+.buttons {
+	background-color: #023d54;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+	font-size: 16px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+	padding: 30px;
+	overflow: hidden;
+	background-color: #023d54;
+	display: block;
+	box-sizing: border-box;
+}
+
+.b {
+	display: block;
+	padding: 30px;
+	background-color: #023d54;
+	box-sizing: border-box;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+}
+
+.c {
+	display: inline;
+	color: white;
+	background-color: #023d54;
+}
+
+.d {
+	text-align: center;
+	vertical-align: middle;
+}
+
+</style>
+
+<ul>
+	<form method="get" action="/UserID">
+		<button class="buttons" type="submit">Login</button>
+	</form>
+
+	<form method="get" action="/">
+		<button class="buttons" type="submit">Logout</button>
+	</form>
+
+	<form method="get" action="/SignUp">
+		<button class="buttons" type="submit">Sign Up</button>
+	</form>
+
+  <form method="get" action="/AdminLogin">
+    <button class="buttons" type="submit">Admin Login</button>
+  </form>
+
+	<form method="get" action="/">
+		<button class="buttons" type="submit">Welcome Page</button>
+	</form>
+</ul>
+
+<div class="d">
+<h3> Welcome! </h3>
+<p> The process of this login system is that: </p>
+<p> - You enter your User ID (3 attempts only) </p>
+<p> - You enter your Pincode (1 attempt only) </p>
+<p> - You enter 3 random characters from your password (3 attempts only)</p>
+<p> For every mistake you make, it shall pop out an error message </p>
+<p> After you met your maximum attempts, you'll be sent back to the welcome page </p>
+<p> If you do make it through, you're able to logout which shall clear out all session data </p>
+<p> Start navigating via the Login, Logout, Sign Up, Admin Login and Welcome Page choices </p>
+<br></br>
+<br></br>
+<p> As a side note, Admin name is "Admin" and Admin password is "Admin!" if you wish to try that out </p>
+<br></br>
+<p> For logging in, already existing data is: </p>
+<p> UserID -> TESTING123 </p>
+<p> Pincode -> 1111 </p>
+<p> Password -> discoideology </p>
+<p> But you can add to the dictionary holding all of the details via Sign Up to try out the Login option </p>
+</div>
+
+<div class="b">
+	<h3 class="c"> Login System </h3>
+</div>
+
+
+</body></html>

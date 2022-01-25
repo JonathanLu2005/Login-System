@@ -1,0 +1,90 @@
+<html>
+<title> Account page </title>
+<body>
+<style>
+* {
+	padding: 0;
+	margin: 0;
+	background-color: #ffd7b0;
+}
+
+.buttons {
+	background-color: #023d54;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+	font-size: 16px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+	padding: 30px;
+	overflow: hidden;
+	background-color: #023d54;
+	display: block;
+	box-sizing: border-box;
+}
+
+.b {
+	display: block;
+	padding: 30px;
+	background-color: #023d54;
+	box-sizing: border-box;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+}
+
+.c {
+	display: inline;
+	color: white;
+	background-color: #023d54;
+}
+
+.d {
+	text-align: center;
+	vertical-align: middle;
+}
+</style>
+
+<ul>
+	<form method="get" action="/UserID">
+		<button class="buttons" type="submit">Login</button>
+	</form>
+
+	<form method="get" action="/">
+		<button class="buttons" type="submit">Logout</button>
+	</form>
+
+	<form method="get" action="/SignUp">
+		<button class="buttons" type="submit">Sign Up</button>
+	</form>
+
+  <form method="get" action="/AdminLogin">
+    <button class="buttons" type="submit">Admin Login</button>
+  </form>
+
+	<form method="get" action="/">
+		<button class="buttons" type="submit">Welcome Page</button>
+	</form>
+</ul>
+
+<div class="d">
+<h3> Hello! </h3>
+<p> {{name}} </p>
+</div>
+
+<div class="b">
+	<h3 class="c"> Login System </h3>
+</div>
+</body>
+</html>
